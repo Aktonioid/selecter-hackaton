@@ -2,7 +2,7 @@
 const LoginPage = () => {
     return (
         <div>
-            ku ku epta
+            Логин
         </div>
     );
 };

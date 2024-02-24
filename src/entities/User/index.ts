@@ -1,5 +1,5 @@
 import {ICity} from "../Region";
-import {BloodGroup} from "../BloodCenter";
+import {BloodGroup} from "../DonationCenter";
 
 export interface IUser {
     id: string;

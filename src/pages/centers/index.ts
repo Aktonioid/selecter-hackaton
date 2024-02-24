@@ -1,0 +1,1 @@
+export {CentersPageAsync as CentersPage} from './ui/CentersPageAsync.tsx'

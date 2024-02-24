@@ -10,7 +10,7 @@ interface RootProviderProps {
 const RootProvider:React.FC<RootProviderProps> = ({children}) => {
     const tg = useTelegram()
     return (
-        <ThemeProvider theme={ tg.colorScheme ? tg.colorScheme : 'light' } >
+        <ThemeProvider theme={ tg.colorScheme ? tg.colorScheme : 'dark' } >
             <Provider store={store}>
                 {children}
             </Provider>

@@ -1,4 +1,4 @@
-import {BloodComponent, IDonationCenter} from "../BloodCenter";
+import {BloodComponent, IDonationCenter} from "../DonationCenter";
 
 export interface IDonation {
     id: string;
@@ -8,7 +8,7 @@ export interface IDonation {
     surname: string;
     patronymic: string;
     donationCenter: IDonationCenter;
-    visitDate: Date;
+    visitDate: number;
     bloodComponent: BloodComponent;
     isPayRequired: boolean;
 }

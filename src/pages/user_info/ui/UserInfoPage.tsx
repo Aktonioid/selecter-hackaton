@@ -5,7 +5,7 @@
 const UserInfoPage = () => {
     return (
         <div>
-
+            Персональная инфа
         </div>
     );
 };
