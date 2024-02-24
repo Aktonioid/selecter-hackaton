@@ -6,6 +6,6 @@ export const fetchUsers = () => (dispatch: AppDispatch) => {
         dispatch(userSlice.actions.fetchUser())
 
     } catch (err) {
-
+        dispatch(userSlice.actions.fetchUserError(JSON.stringify(err)))
     }
 }
