@@ -33,14 +33,14 @@ export interface ISchedule {
 export type BloodGroupStatus = 'NEED' | 'NO_NEED' | 'UNKNOWN';
 export type BloodComponentsStatus = 'ACCEPT' | 'NO_ACCEPT' | 'UNKNOWN';
 export enum BloodGroup {
-    FIRST_POSITIVE = 'O_PLUS',
-    FIRST_NEGATIVE = 'O_MINUS',
-    SECOND_POSITIVE = 'A_PLUS',
-    SECOND_NEGATIVE = 'A_MINUS',
-    THIRD_POSITIVE = 'B_PLUS',
-    THIRD_NEGATIVE = 'B_MINUS',
-    FOURTH_POSITIVE = 'AB_PLUS',
-    FOURTH_NEGATIVE = 'AB_MINUS',
+    FIRST_POSITIVE = 'o_plus',
+    FIRST_NEGATIVE = 'o_minus',
+    SECOND_POSITIVE = 'a_plus',
+    SECOND_NEGATIVE = 'a_minus',
+    THIRD_POSITIVE = 'b_plus',
+    THIRD_NEGATIVE = 'b_minus',
+    FOURTH_POSITIVE = 'ab_plus',
+    FOURTH_NEGATIVE = 'ab_minus',
 }
 
 export type BloodComponentType =
@@ -49,7 +49,18 @@ export type BloodComponentType =
     | BloodComponent.ERYTHROCYTES
     | BloodComponent.LEUKOCYTES
     | BloodComponent.PLATELETS
-export enum BloodComponent {
+
+export type BloodGroupType =
+    | BloodGroup.FIRST_NEGATIVE
+    | BloodGroup.FIRST_POSITIVE
+    | BloodGroup.SECOND_NEGATIVE
+    | BloodGroup.SECOND_POSITIVE
+    | BloodGroup.THIRD_NEGATIVE
+    | BloodGroup.THIRD_POSITIVE
+    | BloodGroup.FOURTH_NEGATIVE
+    | BloodGroup.FOURTH_POSITIVE
+
+    export enum BloodComponent {
     BLOOD = 'BLOOD',
     PLASMA = 'PLASMA',
     PLATELETS = 'PLATELETS',

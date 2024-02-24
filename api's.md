@@ -20,7 +20,7 @@ GET /api/blood_center/ {query: page} Список центров донаций 
 Поиск городов
 GET /api/city/ {query: query_str: string (кусок города от пользователя)} (City)
 
-Юзер баля
+Юзер
 PUT /user изменение данных пользователя
 
 
