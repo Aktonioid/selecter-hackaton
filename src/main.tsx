@@ -1,9 +1,12 @@
-import React from 'react'
 import ReactDOM from 'react-dom/client'
-import App from './App.tsx'
+import App from './app/App.tsx'
+import RootProvider from "./app/providers/RootProvider";
 
-ReactDOM.createRoot(document.getElementById('root')!).render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
+const container = document.getElementById('root')
+if(!container) throw new Error('No container to render app')
+const root =  ReactDOM.createRoot(container)
+root.render(
+    <RootProvider>
+        <App />
+    </RootProvider>,
 )

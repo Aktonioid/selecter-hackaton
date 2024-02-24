@@ -1,0 +1,1 @@
+export { NewDonationPageAsync as NewDonationPage } from './ui/NewDonationPageAsync.tsx'
